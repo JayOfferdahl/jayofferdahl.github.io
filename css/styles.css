@@ -114,7 +114,7 @@ section h2, section h1 {
     }
 }
 
-.garmin-img {
+.portfolio-img {
     max-width: 400px;
     width: 100%;
     padding-bottom: 25px;
@@ -172,6 +172,6 @@ input {
    color: #0c4a0c;  
 }
 
-.portfolio-img {
+.profile-img {
     max-height: 250px;
 }

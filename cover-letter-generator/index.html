@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Angular Cover Letter Template</title>
+
+        <!-- Styles -->
+        <link href="css/xeditable.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+        <!-- JavaScript -->
+        <script src="../js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="../js/angular.min.js"></script>
+        <script src="../js/xeditable.min.js"></script>
+    </head>
+    <body ng-app="CoverLetterApp">
+        <div class="container">
+            <div ng-controller="MainController">    
+                <header>
+                    <a href="#" editable-text="user.name"><h2>{{ user.name }}</h2></a>
+                    <hr>
+                    <p>
+                        <a href="#" editable-text="user.addressLine1">{{ user.addressLine1 }}</a>,  
+                        <a href="#" editable-text="user.addressLine2">{{ user.addressLine2 }}</a>- 
+                        <a href="#" editable-text="user.phone">{{ user.phone }}</a> - 
+                        <a href="#" editable-text="user.email">{{ user.email }}</a> - 
+                        <a href="#" editable-text="user.website">{{ user.website }}</a>
+                    </p><br>
+                </header>
+
+                <a href="#" editable-date="company.date">{{ company.date | date:'longDate' }}</a><br><br>
+
+                <div ng-repeat="info in company" ng-if="$index <= 2">
+                    <a href="#" editable-text="info">{{ info }}</a><br>
+                </div><br>
+                <p>Re: <a href="#" editable-text="company.jobTitle">{{ company.jobTitle }}</a></p>
+                <p>Dear <a href="#" editable-text="company.recruiter">{{ company.recruiter }}</a>,</p>
+                <div class="message">
+                    <a href="#" class="jstfy-jsfty" ng-repeat="paragraph in message" editable-textarea="paragraph" e-style="width: 600px; height: 120px;"><p>{{ paragraph }}</p></a>
+                </div>
+                <br>
+                <footer>
+                    <a href="#" editable-text="footer.closing">{{ footer.closing }}</a>,<br><br>
+                    <a href="#" editable-text="footer.name">{{ footer.name }}</a>
+                </footer>
+            </div>
+
+            <div class="dont-print">
+                <br><hr>
+                <h3>Options</h3><br>
+                <h4>Paragraph Justification</h4>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default active" id="btn-lft" onclick="justifyText( 'left' )">Left Aligned</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" id="btn-jstfy" onclick="justifyText( 'justified' )" aria-toggled="true">Justified</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default" id="btn-cntr" onclick="justifyText( 'center' )">Center Aligned</button>
+                    </div>
+                </div><br>
+
+                <p>Click below to print this page. You might need to remove headers and footers from the print screen for best output.
+                    <br><br>Also, if you just want to save this document, use the 'Save as PDF' option after clicking the 'Destination' button.<br><br></p>
+                <button type="btn btn-default print-btn" value="Print" type="submit" onclick="window.print()">Print</button><br><br><br>
+            </div>
+        </div>
+
+        <!-- Modules -->
+        <script src="js/app.js"></script>
+    </body>
+</html>

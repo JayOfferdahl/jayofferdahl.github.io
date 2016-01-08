@@ -1,0 +1,183 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="Freelance web developer and computer science undergraduate at the University of Kansas.">
+        <meta name="keywords" content="Jay, Offerdahl, freelance, web, developer, programmer, html, css, javascript, java, c++">
+        <meta name="author" content="Jay Offerdahl">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jay Offerdahl</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+        <!-- CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+
+    <body ng-app="PersonalPortfolioApp" ng-controller="MainController">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" id="btnCollapse" data-toggle="collapse" data-target="#navbar-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand large-brand" ng-click="scrollToSection( '#top' )">{{ user.name }}</a>
+                    <a class="navbar-brand small-brand" ng-click="scrollToSection( '#top' )">{{ user.nameShort }}</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav " ng-repeat="category in sections">
+                            <li><a class="nav-collapse nav-main-buttons" ng-click="scrollToSection( category.anchor )">{{ category.title }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+
+        <section class="header" id="top">
+            <div class="container">
+                <img src="images/jay_profile_square.jpg" class="img-responsive img-circle center-block portfolio-img" alt="Jay's Profile Picture" />
+                <br />
+                <h1 class="large-brand">{{ user.name }}</h1>
+                <h1 class="small-brand">{{ user.nameShort }}</h1>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="green-base-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>About</h2>
+                        <p>I'm a computer science undergraduate at the University of Kansas in Lawrence, KS. I just started my third year of study towards a four year bachelor's degree program at KU's School of Engineering. I'm interested in space &amp; deep sea exploration, as well as web application development.</p>
+
+                        <p>I've learned a lot over the past two years at KU and on my own. Most recently, I was interning at Garmin International in Lawrence. While I'm disappointed to be done for the summer, I'm excited to be able to use what I've learned in a new semester at KU.</p>
+
+                        <p>Outside of school &amp; work, I enjoy my fair share of videogames (World of Warcraft &amp; Counter-Strike: Global Offensive). I also like seeing movies, working out, warm weather, hiking, and hanging out with friends and family.</p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section id="portfolio">
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Portfolio</h2><br />
+                    </div>
+                </div>
+
+                <!-- Garmin International --> 
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <a href="http://www.garmin.com" target="_blank"><img class="img-responsive center-block garmin-img" src="images/garmin_logo.png" alt="Garmin International (Logo)" /></a>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-6" style="margin-top: -25px;">
+                        <h3>Software Engineer Intern (Garmin International)</h3>
+                        <p>This past summer, I've been interning at Garmin International, a cutting edge GPS company with a several products in various markets. This internship provided me with several software development skills: version control, code review processes, and large-scale product development.</p>
+                        <p>I also had the opportunity to collaborate with several full-time software engineers on a variety of issues and projects, which really helped me see into the professional world of software development.</p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- Big Biscuit --> 
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <a href="http://www.bigbiscuitrestaurant.com" target="_blank"><img class="center-block img-responsive" src="images/BigBiscuitLogo.png" alt="The Big Biscuit (Logo)" /></a>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-6">
+                        <h3 class="section-sub-heading">Freelance Developer (The Big Biscuit)</h3>
+                        <p class="section-text">After working at The Big Biscuit for over two years as a cook &amp; server, I approached them about designing and developing a brand new site. After agreeing on a design I went to work. I mainly implemented HTML and CSS for this project, as well as a little JavaScript and PHP.<br /><br />
+                        I still continue to make updates to the content and create graphics for use on The Big Biscuit's social media, and I'm working on integrating the web framework Django into this project.<br /><br />
+                        <a href="http://www.bigbiscuitrestaurant.com" target="_blank">Visit the Big Biscuit site.</a>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- Projects Page -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Random Projects</h3>
+                        <p>Here's a few smaller projects I've done to learn different languages and packages. I'll be populating this list as I finish more projects.</p><br />
+                        <a href="cover-letter-generator/"><h4>Cover Letter Generator</h4></a>
+                        <p>I stumbled upon a great angular extension called "xeditable" which allows a user to quickly edit any text, date, or number, etc. on a page. I really enjoyed seeing just how easy this plugin was to use, as well as how useful it can be.</p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section id="contact" class="green-base-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 center-text">
+                        <h2>Contact</h2>
+                        <p>Feel free to get in touch with me! I'm always excited to hear about new opportunities.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2"></div>
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <br />
+                        <form action="//formspree.io/jaysanco@gmail.com" method="POST">
+                            <input type="text" name="Name" placeholder="Name" required /><br />
+                            <input type="email" name="_replyto" placeholder="Email" required /><br />
+                            <input type="hidden" name="_subject" value="Portfolio Site Contact" />
+                            <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea><br />
+
+                            <input class="hidden" type="text" name="_gotcha" />
+                            <input type="submit" value="Send" class="submit-btn" />
+
+                            <input class="hidden" type="hidden" name="_next" value="thanks.html" />
+                        </form>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="green-base green-base-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Jay Offerdahl {{ date | date:'yyyy' }}</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-57592002-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End GA -->
+    </body>
+</html>

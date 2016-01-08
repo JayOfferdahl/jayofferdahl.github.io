@@ -1,0 +1,177 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="description" content="Freelance web developer and computer science undergraduate at the University of Kansas.">
+        <meta name="keywords" content="Jay, Offerdahl, freelance, web, developer, programmer, html, css, javascript, java, c++">
+        <meta name="author" content="Jay Offerdahl">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jay Offerdahl</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/old.css" type="text/css">
+
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header" id="top">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" onclick="scrollToElement('top')">Jay Offerdahl</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a onclick="scrollToElement('about')">about</a></li>
+                        <li><a onclick="scrollToElement('portfolio')">portfolio</a></li>
+                        <li><a onclick="scrollToElement('contact')">contact</a></li>
+                        <li><a data-toggle="modal" data-target="#resumeModal">resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+
+        <header>
+            <div class="container header">
+                <div class="intro-text">
+                    Jay Offerdahl
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h2 class="section-heading">About</h2>
+                    <p>I'm Jay, a computer science undergraduate at the University of Kansas in Lawrence, KS, and in my fourth semester of study towards a four year bachelor's degree program at KU's School of Engineering. I'm interesting in learning more about space and deep sea exlporation, as well as mobile and web application development.
+                    <br /><br />
+
+                    I've learned a lot over the past two years at KU and on my own. Currently, I'm in an Embedded Systems class which has several exciting &amp; challenging projects. For one of the labs, I decided to create a Pong video game on the display of the Stellaris LM3S1968 Micro-Controller. I used a two axis joystick as input, and was able to create a one player version of pong which tracked several variables and game modes. I really enjoyed working on this project and I plan to add two player functionality in a future lab, as well as some basic animation and sound effects.
+                    <br /><br />
+
+                    Outside of school I enjoy my fair share of videogames (World of Warcraft, Counter-Strike: Global Offensive, Smash Bros). I also enjoy seeing movies, working out, warm weather, hiking, and hanging out with friends and family. 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio -->
+        <section class="light-grey-bg" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-heading">Portfolio</h2>
+                    </div>
+                </div>
+
+                <!-- Big Biscuit --> 
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <a href="http://www.bigbiscuitrestaurant.com" target="_blank"><img class="portfolio-img center-block img-responsive" src="images/BigBiscuitLogo.png" alt="The Big Biscuit (Logo)" /></a>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-6">
+                        <h3 class="section-sub-heading">Freelance Developer (The Big Biscuit)</h3>
+                        <p class="section-text">After working at The Big Biscuit for over two years as a cook/server, I approached them about designing and developing a new site for this KC chain. After agreeing on a design I went to work. I mainly implemented HTML and CSS for this project, as well as a little JavaScript and PHP.<br /><br />
+                        As of now, I'm developing a more responsive version of the website built on Django, a web framework. I still continue to make updates to the content and create graphics for use on The Big Biscuit's social media.<br /><br />
+                        <a href="http://www.bigbiscuitrestaurant.com" target="_blank">Visit the Big Biscuit site.</a>
+                    </div>
+                </div>
+
+                <!-- Projects Page -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="section-sub-heading">Website Projects</h3>
+                        <p class="section-text">In an attempt to further my JavaScript skills, I've decided to try and match what Jennifer Dewalt has done <a href="http://jenniferdewalt.com/" target="_blank">here.</a> Basically, for 180 days she made one website per day, first starting with simple html/css. Towards the end, the sites became more and more programming intensive. I'm definitely looking forward to making some cool projects for fun.<br /><br />
+
+                        <a href="projects/projects.html" target="_blank">Take a look at some of the project's I've already completed,</a> and I'll continue to post more as they're finished.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-heading text-center">Contact</h2>
+                        <p class="text-center">
+                        Feel free to get in touch with me! I'm always excited to hear about new opportunities.<br /><br />
+
+                        phone: <a href="tel:573-673-5212">573 - 673 - 5212</a><br />
+                        email: <a href="mailto:jaysanco@gmail.com">jaysanco@gmail.com</a><br />
+                        <a data-toggle="modal" data-target="#resumeModal">resume</a></p>
+                        <img src="images/jay_profile_square.jpg" class="img-responsive img-circle center-block portfolio-img" alt="Jay's Profile Picture" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="light-grey-bg" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="text-center">&copy; Jay Offerdahl 2015 - all rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h2>Jay Offerdahl - Resume</h2>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/Jay_Offerdahl_Resume.png" class="img-responsive img-size-lg center-block resume-img" />
+                    </div>
+                    <div class="modal-footer">
+                        <a href="images/Jay_Offerdahl_Resume.pdf" download="Jay_Offerdahl_Resume.pdf"><button class="btn" style="float: left;" type="submit">Download a PDF Version</button></a>
+                        <div style="width: 20px; height: 20px; float: left;"></div>
+                        <a href="images/Jay_Offerdahl_Resume.pdf" target="_blank"><button class="btn" style="float: left;" type="submit">View a PDF Version</button></a>
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Google Analytics - ->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-57592002-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End GA -->
+    </body>
+</html>

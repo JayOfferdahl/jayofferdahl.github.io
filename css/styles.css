@@ -36,11 +36,11 @@ body {
 
 .green-base-light {
     background-color: #88cc88;
- }
+}
 
- .green-base-dark {
+.green-base-dark {
     background-color: #0c4a0c;
- }
+}
 
 .green-base-text {
     color: #88cc88;
@@ -120,6 +120,12 @@ section h2, section h1 {
     padding-bottom: 25px;
 }
 
+.confluency-img {
+    max-height: 400px;
+    max-width: 400px;
+    padding-bottom: 25px;
+}
+
 hr {
     border: 1px solid #777;
 }
@@ -136,7 +142,7 @@ input {
 #contact input, #contact textarea {
     width : 100%;
     margin: 0;
-    background-color: #88cc88;
+    background-color: #ffffff;
     padding: 5px;
     border: 1px solid #0c4a0c;
     margin-bottom: 10px;

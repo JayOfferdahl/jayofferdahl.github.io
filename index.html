@@ -52,7 +52,7 @@
 
         <section class="header" id="top">
             <div class="container">
-                <img src="images/jay_profile_square.jpg" class="img-responsive img-circle center-block profile-img" alt="Jay's Profile Picture" />
+                <img src="images/portfolio.png" class="img-responsive img-circle center-block profile-img" alt="Jay's Profile Picture" />
                 <br />
                 <h1 class="large-brand">{{ user.name }}</h1>
                 <h1 class="small-brand">{{ user.nameShort }}</h1>
@@ -65,11 +65,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h2>About</h2>
-                        <p>I'm a computer science undergraduate at the University of Kansas in Lawrence, KS. I'm almost done with my third year of study towards a four year bachelor's degree program at KU's School of Engineering. I've always been interested in space &amp; deep sea exploration, but I'm interested in web/mobile application development as well.</p>
+                        <p>I'm a computer science undergraduate at the University of Kansas in Lawrence, KS. I'm entering my senior year towards a bachelor's degree program at KU's School of Engineering. I'm also the president of the information security club at KU, also known as the Jayhackers. We travel/host cyber defense competitons at least twice a year, hold practical lab exercises, and invite industry professionals to speak at our meetings. Aside from security, I've always been interested in space &amp; deep sea exploration, as well as web/mobile application development.</p>
 
-                        <p>I've learned a lot over the past two and a half years at KU and on my own. Most recently, I was part of a group project for my Software Engineering class. My colleagues and I created a categorical based planner application on django. For this project I wrote most of the front-end and collaborated on the back-end and database. I was pleased to learn django and its many capabilities, and I know I'll use it in the future.</p>
+                        <p>Over the last three years I've learned more about computer science than I ever thought I would back in high school. Recently, while interning at Cerner, I participated in Cerner's intern "Hackfest", which puts groups of interns against eachother in a weeklong hackathon. After several caffiene filled nights, my team and I won second place for our vocabulary tracking application, Confluency. The purpose of the application is to track children's vocabulary over time, and to give insightful analytics of the collected data.</p>
 
-                        <p>Outside of school &amp; work, I enjoy my fair share of videogames, (Rocket League, League of Legends, Elite: Dangerous). I also like seeing movies, working out, warm weather, hiking, and hanging out with friends and family.</p>
+                        <p>Outside of school &amp; work, I enjoy my fair share of videogames, seeing movies, working out, warm weather, hiking, and hanging out with friends and family.</p>
                         <br />
                     </div>
                 </div>
@@ -84,6 +84,22 @@
                         <h2>Portfolio</h2><br />
                     </div>
                 </div>
+                
+                <!-- Confluency --> 
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
+                        <img class="img-responsive center-block confluency-img" src="images/confluency.png" alt="Confluency screenshot" />
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-6" style="margin-top: -25px;">
+                        <h3>Hackfest 2016 (Confluency)</h3>
+                        <p>As mentioned above, Hackfest 2016 was a week-long hackathon put on by Cerner for the interns. My team, consisting of myself and three other KU undergraduates, took second place with our app: Confluency.</p>
+                        <p>The purpose of Confluency is to track children's vocabulary development over time. Our original goal for the week was to connect out GUI/back-end with IBM Watson's speech to text API, which would allow us to take audio from a child's conversation, and convert it to text so we could perform analytical calculations on it in order to show a description of that child's progress. We ended up fleshing out the GUI/back-end to offer a proof of concept before the week concluded.</p>
+                        <p>With this app, a user can view their children, each child's conversation history, as well as analytics on all conversations. Users can also record conversations and save them to a specific child.</p>
+                        <p>We used the Ionic framework to build this application, which is built off of Angular.js and Cordova, and is made for mobile/web application development. For this project, I worked on both front-end and back-end, and spent quite a bit of time learning the Ionic framework.</p>
+                    </div>
+                </div>
+
+                <hr />
 
                 <!-- YourToDo --> 
                 <div class="row">
@@ -92,7 +108,7 @@
                     </div>
                     <div class="col-lg-8 col-md-7 col-sm-6" style="margin-top: -25px;">
                         <h3>Developer (YourToDo)</h3>
-                        <p>My friends and I created a web application build on django which categorically organized events in a planner. We created three layouts, day, week, and month, and are planning on adding more in the future. The application allows users to neatly plan out their lives while keeping certain aspects of it grouped together, such as school, gym, work, or any other breakdown.</p>
+                        <p>My colleagues and I created a web application build on django which categorically organized events in a planner. We created three layouts, day, week, and month, and are planning on adding more in the future. The application allows users to neatly plan out their lives while keeping certain aspects of it grouped together, such as school, gym, work, or any other breakdown.</p>
                         <p>For this project, I was mainly focused on front-end development, and I also helped with setting up the back-end and database. In the end, I learned a lot about several of the packages we implemented, which consisted of django, python, bootstrap, and ajax, as well as more. I'm excited to continue developing this application for the future.</p>
                         <p>YourToDo isn't on a production server yet, but that's one of our primary goals for the future.</p>
                     </div>
@@ -107,8 +123,8 @@
                     </div>
                     <div class="col-lg-8 col-md-7 col-sm-6" style="margin-top: -25px;">
                         <h3>Software Engineer Intern (Garmin International)</h3>
-                        <p>This past summer, I've been interning at Garmin International, a cutting edge GPS company with a several products in various markets. This internship provided me with several software development skills: version control, code review processes, and large-scale product development.</p>
-                        <p>I also had the opportunity to collaborate with several full-time software engineers on a variety of issues and projects, which really helped me see into the professional world of software development.</p>
+                        <p>During the summer of 2015, I interned at Garmin International, a cutting edge GPS company with a several products in various markets. I was on the Automotive Personal Navigation Device Maintenance team (AutoPND). This internship provided me with several software development skills: version control, code review processes, and large-scale product development.</p>
+                        <p>I also had the opportunity to collaborate with several full-time software engineers on a variety of issues and projects, which really helped me see into the professional world of software development as well as prepare me for larger projects.</p>
                     </div>
                 </div>
 
@@ -121,8 +137,8 @@
                     </div>
                     <div class="col-lg-8 col-md-7 col-sm-6">
                         <h3 class="section-sub-heading">Freelance Developer (The Big Biscuit)</h3>
-                        <p class="section-text">After working at The Big Biscuit for over two years as a cook &amp; server, I approached them about designing and developing a brand new site. After agreeing on a design I went to work. I mainly implemented HTML and CSS for this project, as well as a little JavaScript and PHP.<br /><br />
-                        I still continue to make updates to the content and create graphics for use on The Big Biscuit's social media, and I'm working on integrating the web framework Django into this project.<br /><br />
+                        <p class="section-text">After working at The Big Biscuit for over two years as a cook &amp; server, I approached them about designing and developing a brand new site. I had a lot of fun designing and deploying the original site. However, after being stuck with a static site for nearly a year, I rebuilt the site on Angular.js, a framework for one-page web applications, which greatly improved traversing the site, as well as ease of maintainability.<br /><br />
+                        I still continue to make updates to the website and improve functionality where I can. I also create graphics for use on the site and The Big Biscuit's social media.<br /><br />
                         <a href="http://www.bigbiscuitrestaurant.com" target="_blank">Visit the Big Biscuit site.</a>
                     </div>
                 </div>

@@ -12,24 +12,32 @@ app.controller( 'MainController', ['$scope', function( $scope ) {
     $scope.date = new Date();
 
     $scope.sections =
-    {
-        primary: {
+    [
+        {
             anchor: '#about',
             title: 'about',
         },
-    	secondary: {
-    		anchor: '#portfolio',
-    		title: 'portfolio',
+    	{
+    		anchor: '#internships',
+    		title: 'internships',
     	},
-    	tertiary: {
+        {
+            anchor: '#projects',
+            title: 'projects',
+        },
+        {
+            anchor: '#involvement',
+            title: 'involvement',
+        },
+    	{
             anchor: '#contact',
             title: 'contact',
         },
-    };
+    ];
 
     $scope.scrollToSection = function( anchorName )
     {
-        var targetOffset = $( anchorName ).offset().top - 70;
+        var targetOffset = $( anchorName ).offset().top - 50;
 
         $( 'body, html' ).stop().animate( {
             'scrollTop': targetOffset

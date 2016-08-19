@@ -1,18 +1,14 @@
-var app = angular.module( "PersonalPortfolioApp", [] );
+var app = angular.module("PersonalPortfolioApp", []);
 
-app.controller( 'MainController', ['$scope', function( $scope ) {
-    $scope.user =
-    {
+app.controller('MainController', ['$scope', function($scope) {
+    $scope.user = {
     	name: 'Jay Offerdahl',
         nameShort: 'Jay O',
-    	email: 'jaysanco@gmail.com',
-    	phone: '(573) - 673 - 5212',
     };
 
     $scope.date = new Date();
 
-    $scope.sections =
-    [
+    $scope.sections = [
         {
             anchor: '#about',
             title: 'about',
@@ -35,24 +31,29 @@ app.controller( 'MainController', ['$scope', function( $scope ) {
         },
     ];
 
-    $scope.scrollToSection = function( anchorName )
-    {
-        var targetOffset = $( anchorName ).offset().top - 50;
+    // Scrolls to a specific anchor on the page, assumes the anchor exists
+    $scope.scrollToSection = function(anchorName) {
+        var targetOffset = $(anchorName).offset().top - 50;
 
-        $( 'body, html' ).stop().animate( {
-            'scrollTop': targetOffset
-        }, 1000 );
+        $('.scroll-container').mCustomScrollbar("scrollTo", "-=" + targetOffset, {
+            scrollInertia:1500,
+            scrollEasing:"easeInOut",
+        });
     };
 
 }]);
 
-$( document ).ready( function () {
-
-     $( '.nav-collapse' ).click( function ()
-     {
-        if( $( '#btnCollapse' ).css( 'display' ) != 'none' )
-        {
-            $( '#btnCollapse' ).click();
+$(document).ready(function () {
+    // Hide the navbar collapsable menu when clicked
+    $('.nav-collapse').click(function () {
+        if($('#btnCollapse').css('display') != 'none') {
+            $('#btnCollapse').click();
         }
+    });
+
+    // Initialize the custom scrollbar to the 'body' element
+    $("body").mCustomScrollbar({
+        theme: "minimal",
+        scrollInertia: 500,
     });
 });

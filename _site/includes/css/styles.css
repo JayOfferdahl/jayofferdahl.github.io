@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'DINPro';
+    src: url(../fonts/DINPro.eot);
+    src: url(../fonts/DINPro-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/DINPro-Regular.woff) format('woff'),
+         url(../fonts/DINPro-Regular.tff) format('truetype');
+}
+
+html, body {
+	font-family: 'DINPro', sans-serif;
+    height: 100%;
+}
+
+.navbar {
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar a {
+	cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.dark-base {
+    background-color: #222222;
+    color: #fff;
+}
+
+.dark-base-light {
+    background-color: #333333;
+    color: #fff;
+}
+
+.dark-base-dark {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.header {
+    margin-top: 50px;
+    padding-bottom: 35px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 64px;
+}
+
+@media (max-width: 560px) {
+    .header h1 {
+        font-size: 32px;
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    padding-top: 43px;
+}
+
+section {
+    color: #000;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+}
+
+section h2, section h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.small-brand {
+    display: none;
+}
+
+@media (max-width: 337px) {
+    .large-brand {
+        display: none;
+    }
+    .small-brand {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    section h2, section h3 {
+        text-align: center;
+    }
+}
+
+.portfolio-img {
+    max-height: 200px;
+    padding-bottom: 25px;
+}
+
+.confluency-img {
+    max-height: 400px;
+    padding-bottom: 25px;
+}
+
+hr {
+    border: 1px solid #777;
+}
+
+.hidden {
+    display: none;
+}
+
+.scroll-container {
+    height: 100%;
+}
+
+#contact input, #contact textarea {
+    width : 100%;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #000;
+
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+#contact input.submit-btn {
+    background-color: #333333;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+#contact input.submit-btn:hover {
+    background-color: #1a1a1a;
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
+.profile-img {
+    max-height: 250px;
+}
+
+.contact-icon {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}

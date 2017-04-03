@@ -1,0 +1,55 @@
+body {
+    margin: 0 auto;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.container hr {
+    margin: 6px 0;
+    border-width: 1px 0;
+    border-style: solid none;
+}
+
+a {
+    border: none !important;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #428bca !important;
+}
+
+header {
+    text-align: center;
+}
+
+header h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 12px;
+}
+
+.jstfy-lft {
+    text-align: left;
+}
+
+.jstfy-jstfy {
+    text-align: justify;
+}
+
+.jstfy-cntr {
+    text-align: center;
+}
+
+.dont-print {
+    margin-bottom: 50px;
+}
+
+@media print {
+    .dont-print {
+        display: none;
+    }
+}

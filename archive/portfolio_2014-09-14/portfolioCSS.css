@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* Background, body, header styles */
+body {
+	background-color: #313131;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #ffffff;
+	margin: auto;
+}
+.container {
+	margin: auto;
+	width: 900px;
+}
+.header {
+	width: 900px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+/* Navigation Bar Styles */ 
+.navBar {
+	width: 900px;
+	height: 100px;
+}
+.navBar a {
+	height: 100px;
+	width: 180px;
+	float: left;
+	font-size: 36px;
+	color: #aaaaaa;
+	text-decoration: none;
+	text-align: center;
+	background-image: url(images/darkBG.png);
+	background-repeat: repeat-x;
+	padding-top: 25px;
+}
+.navBar a:hover {
+	background-image: url(images/lightBG.png);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+.navBar .active {
+	background-image: url(images/lightBG.png);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+
+
+/* Content Styles */
+.mainContent {
+	background-color: #1e1e1e;
+	border: 3px solid #636363;
+	width: 894px;
+	margin-top: 20px;
+	min-height: 100px;
+	margin-bottom: 76px;
+	overflow: hidden;
+}
+
+.leftContent {
+	float: left;
+	width: 427px;
+	margin-bottom: 20px;
+}
+.rightContent {
+	border: 3px solid #636363; 
+	float: right;
+	padding-right: 20px;	
+	padding-left: 20px;
+}
+
+.insideMainContent {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.outer {
+	text-align: center;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.insideMainContent a {
+	color: #ffffff;
+}
+.insideMainContent ul {
+	font-size: 20px;	
+}
+.contentImg {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;	
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	border-top: 6px solid #161616;
+	width: 100%;
+	height: 50px;
+	background-color: #1e1e1e;
+}
+.footer p {
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #aaaaaa;	
+}
+.noUnderline a {
+	text-decoration: none;
+	color: #CCC;
+}
+.noUnderline a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+/* Collapsing Content Styles */
+.collapse {	
+	font-size: 31px;
+	display:block;
+}
+.collapse:hover {text-decoration: underline;}
+.collapse + input {display:none;}
+.collapse + input + *{display:none;}
+.collapse+ input:checked + *{display:block;}
+
+
+/* Font/paragraph Styles */
+.fs24 {font-size: 24px;}
+.fs36 {font-size: 36px;}
+.mll{margin-left: 20px;}
+.colorRed{color: red;}
+h1 {
+	font-size: 48px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+.mainContent p {
+	text-decoration: none;
+	text-align: justify;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.rightContent p {
+	float: right;

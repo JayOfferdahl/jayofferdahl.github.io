@@ -1,0 +1,54 @@
+/* CSS Document */
+
+body, html {
+	background-color: #4D4D4D;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	left: 0;
+	overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+	.container { width: 1170px; }
+}
+@media (min-width: 992px) {
+	.container { width: 970px; }
+}
+@media (min-width: 768) {
+	.container { width: 750px; }
+}
+@media (max-width: 767) {
+	.container { /* Auto */ }
+}
+.container { 
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-1 {
+	width: 100%;
+	background-color: #303030;
+	height: 65px;
+	line-height: 65px;
+	font-size: 24px;
+	font-family: 'Abel', sans-serif;
+}
+
+.nav-brand {
+	height: 65px;
+	width: 120px;
+	padding-right: 15px;
+	padding-left: 15px;
+	cursor: pointer;
+	border-bottom: 2px solid #000;
+}
+.nav-brand a {
+	width: 120px;
+	height: 65px;
+	color: #CCC;
+	text-decoration: none;
+	float: left;
+}

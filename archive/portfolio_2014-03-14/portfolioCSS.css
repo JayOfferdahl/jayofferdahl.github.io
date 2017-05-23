@@ -1,0 +1,147 @@
+@charset "utf-8";
+body
+{
+	background-color: #313131;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #ffffff;
+	margin: auto;
+}
+
+.container
+{
+	margin: auto;
+	width: 900px;
+}
+
+.homePage
+{
+	margin-top: 20%;	
+}
+
+.header
+{
+	width: 900px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.navBar
+{
+	width: 900px;
+	height: 100px;
+}
+
+.navBar a
+{
+	height: 100px;
+	width: 225px;
+	float: left;
+	font-size: 36px;
+	color: #aaaaaa;
+	text-decoration: none;
+	text-align: center;
+	background-image: url(images/darkBG.png);
+	background-repeat: repeat-x;
+	padding-top: 25px;
+}
+
+.navBar a:hover
+{
+	background-image: url(images/lightBG.png);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+.navBar .active
+{
+	background-image: url(images/lightBG.png);
+	background-repeat: repeat-x;
+	color: #ffffff;
+}
+
+.mainContent
+{
+	background-color: #1e1e1e;
+	border: 3px solid #636363;
+	width: 894px;
+	margin-top: 20px;
+	min-height: 100px;
+	margin-bottom: 76px;
+	overflow: hidden;
+}
+
+.mainContent h1
+{
+	font-size: 48px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.mainContent p
+{
+	text-decoration: none;
+	text-align: justify;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.insideMainContent
+{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.bulkText {
+	font-size: 20px;	
+}
+
+.outer {
+	text-align: center;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.insideMainContent a
+{
+	color: #ffffff;
+}
+
+.contentImg
+{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 10px;	
+}
+
+.footer
+{
+	position: fixed;
+	bottom: 0;
+	border-top: 6px solid #161616;
+	width: 100%;
+	height: 50px;
+	background-color: #1e1e1e;
+}
+
+.footer p
+{
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #aaaaaa;	
+}
+
+.noUnderline a{
+	text-decoration: none;
+	color: #CCC;
+}
+
+.noUnderline a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+.colorRed{color: red;}
